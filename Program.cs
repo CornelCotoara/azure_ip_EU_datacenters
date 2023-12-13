@@ -18,14 +18,8 @@ namespace azure
             // This list is accurate as of 8/26/2021
             List<string> USGeographyRegions = new List<string>
             {
-                "centralus",
-                "eastus",
-                "eastus2",
-                "northcentralus",
-                "southcentralus",
-                "westcentralus",
-                "westus",
-                "westus2"
+                "westeurope",
+                "northeurope",
             };
 
             // Load the weekly file
