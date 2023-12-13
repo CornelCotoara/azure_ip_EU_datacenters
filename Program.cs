@@ -50,12 +50,12 @@ namespace azure
                 }
             }
 
-            System.IO.File.WriteAllText(@"azure-us.txt", String.Join(Environment.NewLine, ipAddresses));
-            System.IO.File.WriteAllText(@"azure-us-v4.txt", String.Join(Environment.NewLine, ipAddresses.Where(ip => ip.IndexOf(":") < 0)));
-            System.IO.File.WriteAllText(@"azure-us-v6.txt", String.Join(Environment.NewLine, ipAddresses.Where(ip => ip.IndexOf(":") > 0)));
-            System.IO.File.WriteAllText(@"azure-us.csv", String.Join(",", ipAddresses));
-            System.IO.File.WriteAllText(@"azure-us-v4.csv", String.Join(",", ipAddresses.Where(ip => ip.IndexOf(":") < 0)));
-            System.IO.File.WriteAllText(@"azure-us-v6.csv", String.Join(",", ipAddresses.Where(ip => ip.IndexOf(":") > 0)));
+            System.IO.File.WriteAllText(@"azure-eu.txt", String.Join(Environment.NewLine, ipAddresses));
+            System.IO.File.WriteAllText(@"azure-eu-v4.txt", String.Join(Environment.NewLine, ipAddresses.Where(ip => ip.IndexOf(":") < 0)));
+            System.IO.File.WriteAllText(@"azure-eu-v6.txt", String.Join(Environment.NewLine, ipAddresses.Where(ip => ip.IndexOf(":") > 0)));
+            System.IO.File.WriteAllText(@"azure-eu.csv", String.Join(",", ipAddresses));
+            System.IO.File.WriteAllText(@"azure-eu-v4.csv", String.Join(",", ipAddresses.Where(ip => ip.IndexOf(":") < 0)));
+            System.IO.File.WriteAllText(@"azure-eu-v6.csv", String.Join(",", ipAddresses.Where(ip => ip.IndexOf(":") > 0)));
 
             System.IO.File.Delete(fileName);
         }
